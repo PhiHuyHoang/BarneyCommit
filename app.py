@@ -7,6 +7,7 @@ setup_variable = "commit_messages.txt"
 messages = open(setup_variable,encoding='utf-8').read().split('\n')
 result = open("static/index.txt","w")
 result.write(random.choice(messages))
+result.close()
 
 @app.route('/', methods=['GET' , 'POST'])
 def index():
