@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 setup_variable = "commit_messages.txt"
 messages = open(setup_variable,encoding='utf-8').read().split('\n')
-result = open("index.txt","w")
+result = open("static/index.txt","w")
 result.write(random.choice(messages))
 
 @app.route('/', methods=['GET' , 'POST'])
