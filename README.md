@@ -6,6 +6,10 @@ A small flask app that generates random commit messages from Barney - HIMYM quot
 https://barneycommit.herokuapp.com/
 ```
 
+## Update
+
+I decided to copy some cute messages from whatthecommit ...
+
 ## Command
 
 ```
