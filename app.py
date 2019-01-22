@@ -5,10 +5,12 @@ app = Flask(__name__)
 
 setup_variable = "commit_messages.txt"
 messages = open(setup_variable,encoding='utf-8').read().split('\n')
+result = open("index.txt","w")
+result.write(random.choice(messages))
 
 @app.route('/', methods=['GET' , 'POST'])
 def index():
-    return random.choice(messages)
+    return "Hello from the other rice ..."
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 8000))
