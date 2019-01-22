@@ -8,6 +8,7 @@ messages = open(setup_variable,encoding='utf-8').read().split('\n')
 
 @app.route('/', methods=['GET' , 'POST'])
 def index():
+    hello = "hello"
     return random.choice(messages)
 
 if __name__ == '__main__':
